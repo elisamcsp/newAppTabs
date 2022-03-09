@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-explore-container',
@@ -6,11 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./explore-container.component.scss'],
 })
 export class ExploreContainerComponent implements OnInit {
-  @Input() name: string;
-  @Input() description: string;
+  @Input() value: string;
+  @Input() urlPage: string;
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {}
 
+  goToNewPageNavCtrl(){
+      this.navCtrl.navigateForward(this.urlPage);    
+  }
 }
