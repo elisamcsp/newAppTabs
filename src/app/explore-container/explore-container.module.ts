@@ -6,6 +6,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponent } from './explore-container.component';
 
+//import { TabsPageRoutingModule } from './tabs-routing.module';
+
 @NgModule({
   imports: [ CommonModule, FormsModule, IonicModule],
   declarations: [ExploreContainerComponent],
