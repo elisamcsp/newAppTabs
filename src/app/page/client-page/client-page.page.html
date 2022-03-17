@@ -4,7 +4,7 @@
             <ion-back-button></ion-back-button>
         </ion-buttons>
 
-        <ion-title>Clients</ion-title>
+        <ion-title>Client list</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -21,7 +21,7 @@
                 <p>Address: {{ client.address }}</p>
             </ion-label>
             <ion-buttons slot="end">
-                <ion-button id="changeText" [routerLink]="['/client-edit-page']">
+                <ion-button id="changeText" [routerLink]="['/client/edit']">
                     <ion-icon slot="start" name="create"></ion-icon>
                 </ion-button>
             </ion-buttons>
